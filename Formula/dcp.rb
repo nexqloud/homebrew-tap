@@ -5,21 +5,21 @@
 class Dcp < Formula
   desc "Nexqloud DCP CLI"
   homepage "https://nexqloud.io"
-  version "1.0.5"
+  version "1.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.5_darwin_amd64.tar.gz"
-      sha256 "3eae46df19942febf76d81b32095dd478083cfb5f9b8546a2fb9edc4c1fbd179"
+      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.6_darwin_amd64.tar.gz"
+      sha256 "71ab80dc41b09254576f604e31807129c3b85e41f7def6bd762b99ce900c2cbb"
 
       define_method(:install) do
         bin.install "dcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.5_darwin_arm64.tar.gz"
-      sha256 "7900b3ad1a361384a4a4e6bf7b39c64530d16e4f2ef51c11a6496c35e81bbc03"
+      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.6_darwin_arm64.tar.gz"
+      sha256 "a6c08f513368248de678c3c0ecc472c23edde94b000dd2e94c87f418811efd81"
 
       define_method(:install) do
         bin.install "dcp"
@@ -29,15 +29,15 @@ class Dcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.5_linux_amd64.tar.gz"
-      sha256 "426ff2bf1602577bea0d595200ed9bed9ddbec18144ff8f58acc06618ea5fb6f"
+      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.6_linux_amd64.tar.gz"
+      sha256 "bed6119abbdf1174c05ee635e3ac4993412615f8120856c8eff639d8da29e8f9"
       define_method(:install) do
         bin.install "dcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.5_linux_arm64.tar.gz"
-      sha256 "477e9d973200a878bbc5f294974b488cf4b6595284cdbd1f9788360e02f9433d"
+      url "https://cli.dcp.nexqloud.net/latest/dcp_1.0.6_linux_arm64.tar.gz"
+      sha256 "db92564e84f7d93c6e0dd0e443c5d5222dd23cdd247687bd9e6d9482c2094a91"
       define_method(:install) do
         bin.install "dcp"
       end
